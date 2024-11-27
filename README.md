@@ -49,6 +49,6 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
 - Cria um estado dishes que armazena o array DISHES com os dados dos pratos.
 
-### Funcionamento do <Menu dishes>
+### Funcionamento do < Menu dishes >
 
 - Envia o array dishes para o componente Menu, que exibe os pratos usando .map().
