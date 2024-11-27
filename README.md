@@ -1,38 +1,61 @@
-# Configuração do aplicativo React
+# Aula 10 - React Components - props
 
-Passos realizados
+# MenuComponent.js
 
-## 1 - Na prompt de comando foi digitado os seguintes códigos:
+### Imports utilizados
 
-npm install reactstrap react react-dom 
-npm install --save bootstrap 
-npm install react-popper @popperjs/core
-
-## 2 - Em seguida, a pasta "src" que foi criada na aula-5 foi aberta no Visual Studio Code e no arquivo 'index.js' foi adicionado essa linha:
-
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-## 3 - Após isso, no arquivo 'App.js' na mesma pasta "src" foi apagado a parte da header do html e adicionado esse bloco de código: 
-
-```js 
-<Navbar dark color="primary"> 
-    <div className="container"> 
-        <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand> 
-        <div>Aluno: Fulano de Tal</div> 
-    </div> 
-</Navbar> 
+```js
+import React, { useState } from 'react'; 
+import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 ```
 
-1. **`<Navbar dark color="primary">`**': Cria uma barra de navegação com fundo escuro e cor primária (geralmente azul).
-2. **`<div className="container">`**: Centraliza o conteúdo da barra de navegação e garante espaçamento adequado nas laterais.
-3. **`<NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>`**: Exibe o nome do site, "Ristorante Con Fusion", que é um link para a página inicial.
-4. **`<div>Aluno: Bruna Giuliana</div>`**: Exibe a informação "Aluno: Fulano de Tal" ao lado do título.
-5. Fechamento da tag **`'<Navbar>`**: Finaliza a barra de navegação.
+- `React`: importante para contruir interfaces do usuário ou para usar o JSX;
+- `Card`: o card é o container para exibir textos, imagens ou links;
+- `CarImg`: usado dentro de um card para exibir uma imagem dentro do cartão, ou seja o `Card`;
+- `CardImgOverlay`: esse vai adicionar uma sobreposição de imagem dentro de um cartão, que seria a imagem dentro do `CardImg`;
+- `CardText`: como o nome já diz, esse vai subir um texto dentro do corpo cartão;
+- `CardBody`: é o corpo do cartão, onde vai ser colocado o conteúdo principal;
+- `CardTitle`: aqui é colocado o título, que fica antes do body.
 
-Também foi alterado a o nome do aluno na div.
+### Componentes usados e suas funções
 
-## 4 - Imagem do resultado
+- `React`: importante para contruir interfaces do usuário ou para usar o JSX;
+- `Card`: o card é o container para exibir textos, imagens ou links;
+- `CarImg`: usado dentro de um card para exibir uma imagem dentro do cartão, ou seja o `Card`;
+- `CardImgOverlay`: esse vai adicionar uma sobreposição de imagem dentro de um cartão, que seria a imagem dentro do `CardImg`;
+- `CardText`: como o nome já diz, esse vai subir um texto dentro do corpo cartão;
+- `CardBody`: é o corpo do cartão, onde vai ser colocado o conteúdo principal;
+- `CardTitle`: aqui é colocado o título, que fica antes do body.
 
-![Imagem](resultado.png)
 
+### Função do onDishSelect no projeto
 
+- Nesse projeto ele é usado para a seleção de pratos, com interfaces interativas, como o menu do restaurante.
+ 
+### Função do renderDish
+
+- Tem a função de exibir as informações de um prato de forma estruturada.
+ 
+### Função do props.dishes.map
+
+-  É usada para iterar sobre a lista de pratos, ou seja, percorrer uma sequência de elementos e gera um novo componente ou elemento para cada prato.
+
+# dishes.js
+
+### Propriedades
+
+- Id, name, image, category, label, price, description, comments.
+
+### Tipo de date utilizado
+
+- ISO 8601: Ano/mês/data/hora/minutos/segundos
+
+# App.js
+
+### Função do oconst [dishes]
+
+- Cria um estado dishes que armazena o array DISHES com os dados dos pratos.
+
+### Funcionamento do <Menu dishes>
+
+- Envia o array dishes para o componente Menu, que exibe os pratos usando .map().
