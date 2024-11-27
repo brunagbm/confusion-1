@@ -9,13 +9,7 @@ import React, { useState } from 'react';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap';
 ```
 
-- `React`: importante para contruir interfaces do usuário ou para usar o JSX;
-- `Card`: o card é o container para exibir textos, imagens ou links;
-- `CarImg`: usado dentro de um card para exibir uma imagem dentro do cartão, ou seja o `Card`;
-- `CardImgOverlay`: esse vai adicionar uma sobreposição de imagem dentro de um cartão, que seria a imagem dentro do `CardImg`;
-- `CardText`: como o nome já diz, esse vai subir um texto dentro do corpo cartão;
-- `CardBody`: é o corpo do cartão, onde vai ser colocado o conteúdo principal;
-- `CardTitle`: aqui é colocado o título, que fica antes do body.
+- O import de React traz o núcleo da biblioteca React, enquanto useState permite gerenciar o estado em componentes funcionais. Os componentes Card, CardImg, CardImgOverlay, CardText, CardBody, e CardTitle são importados da biblioteca reactstrap para criar e estilizar cartões de conteúdo de forma simples e responsiva.
 
 ### Componentes usados e suas funções
 
