@@ -27,7 +27,6 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 - `CardBody`: é o corpo do cartão, onde vai ser colocado o conteúdo principal;
 - `CardTitle`: aqui é colocado o título, que fica antes do body.
 
-
 ### Função do onDishSelect no projeto
 
 - Nesse projeto ele é usado para a seleção de pratos, com interfaces interativas, como o menu do restaurante.
@@ -44,7 +43,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
 ### Propriedades
 
-- Id, name, image, category, label, price, description, comments.
+- id, name, image, category, label, price, description, comments.
 
 ### Tipo de date utilizado
 
@@ -58,4 +57,4 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
 ### Funcionamento do <Menu dishes>
 
-- Envia o array dishes para o componente Menu, que exibe os pratos usando .map().
+- envia o array dishes para o componente Menu, que exibe os pratos usando .map().
