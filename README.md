@@ -51,4 +51,4 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 
 ### Funcionamento do <Menu dishes>
 
-- envia o array dishes para o componente Menu, que exibe os pratos usando .map().
+- Envia o array dishes para o componente Menu, que exibe os pratos usando .map().
